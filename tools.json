@@ -1,0 +1,52 @@
+[
+  {
+    "name": "search_schools",
+    "description": "Search US colleges and universities by name. Returns school name, location, tuition, admission rate, student size, median earnings, and completion rate. Example: search_schools(\"MIT\", \"MA\").",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "api.data.gov API key"
+        },
+        "query": {
+          "type": "string",
+          "description": "School name to search for (e.g., \"Stanford\", \"community college\")"
+        },
+        "state": {
+          "type": "string",
+          "description": "Two-letter state code to filter (e.g., \"CA\", \"NY\")"
+        },
+        "limit": {
+          "type": "number",
+          "description": "Number of results to return (default: 10, max: 100)"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_school",
+    "description": "Get detailed info for a specific college by its College Scorecard ID. Returns tuition, admission rate, student size, median earnings after 10 years, completion rate, and median debt.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "_apiKey": {
+          "type": "string",
+          "description": "api.data.gov API key"
+        },
+        "id": {
+          "type": "number",
+          "description": "College Scorecard school ID (numeric, from search results)"
+        }
+      },
+      "required": [
+        "_apiKey",
+        "id"
+      ]
+    }
+  }
+]
