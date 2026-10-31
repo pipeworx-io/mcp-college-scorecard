@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-college-scorecard",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "College Scorecard MCP — US Department of Education College Scorecard API",
   "type": "module",
   "main": "lib/index.js",
@@ -28,6 +28,6 @@
     "slug": "college-scorecard",
     "gatewaySlug": "college-scorecard",
     "sourceHash": "v1-866bb146951c441b04bc12b48c7b921b78c6ac3d181fea4f170126d15bfa3fda",
-    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
+    "sourceCommit": "5ce1a05186d46479e23865c66bdb8579d8de445e"
   }
 }
